@@ -18,3 +18,7 @@ func _process(delta: float) -> void:
 		apply_torque(Vector3(0.0, 0.0, -delta*100.0))
 
 	# rotate right
+
+
+func _on_body_entered(body: Node) -> void:
+	print(body.name)
