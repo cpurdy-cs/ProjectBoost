@@ -13,5 +13,8 @@ func _process(delta: float) -> void:
 		
 	if Input.is_action_pressed("rotate_left"):
 		rotate_z(delta)
+		
+	if Input.is_action_pressed("rotate_right"):
+		rotate_z(-delta)
 
 	# rotate right
